@@ -1,0 +1,141 @@
+<html>
+
+<head>
+<title>
+Calculation
+</title>
+<style>
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+</style>
+</head>
+<div class="navbar">
+  <a href="homepage.html">Home</a>
+  <a href="skills.html">Skills</a>
+  <a href="aboutme.html">About Me</a>
+  <div class="dropdown">
+    <button class="dropbtn" onclick="myFunction()">Projects
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content" id="myDropdown">
+      <a href="Project1.html">Project 1</a>
+      <a href="project2.html">Project 2</a>
+      <a href="project3.html">Project 3</a>
+      <a href="project4.html">Project 4</a>
+      <a href="extracredit.html">Extra Credit</a>
+      <a href="jquery.html">J Query Animation</a>
+      <a href="MidTermProj.html">Midterm</a>
+      <a href="postcard.html">Post Cards</a>
+
+
+
+    </div>
+  </div>
+</div>
+
+<body>
+
+  <h2> With Javascript, we can do basic calculations using the script tag</h2>
+
+  <button type="button" onclick="myfunction()">How many snacks would I need at a certain age, with pre-given information.</button>
+  <p id="snacks" style="color:blue;"><b>Snacks<b></p>
+
+<p>Lets say the person in question asking is 25 years of age.</p>
+<p>The person wants to know how many of a certain snack they'd need at the age of 90</p>
+<p>If the person eats 4 of those snacks a day, how many will he need for each day until they're 90?</p>
+
+  <script>
+  function myfunction()
+  {
+  var year = 25;
+  var maxyear = 90;
+  var amtperday = 4;
+  var total = maxyear - year;  // calculation for the information posted
+  var total2 = total * 365;
+  var total3 = total2 * amtperday;
+
+
+
+  document.getElementById("snacks").innerHTML = "You are " + year + " years old. If you eat 4 of your favorite snacks a day. You will need " + total3 + " of them to last you until the ripe old age of " + maxyear + ".";
+// what will be displayed on the webpage, alongside the variables i've posted at the top
+  }
+
+  </script>
+
+
+    <script>
+
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    window.onclick = function(e) {
+      if (!e.target.matches('.dropbtn')) {
+        var myDropdown = document.getElementById("myDropdown");
+          if (myDropdown.classList.contains('show')) {
+            myDropdown.classList.remove('show');
+          }
+      }
+    }
+    </script>
+
+</body>
+
+</html>

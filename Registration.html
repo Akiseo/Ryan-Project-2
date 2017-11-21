@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Elinia Fan Page</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Boogaloo|Open+Sans:300,400|Oswald:700">
+	<link rel="stylesheet" href="css/main2.css">
+	<link rel="stylesheet" href="css/main1.css">
+	<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/style1.css">
+<style>
+body {
+    background-image: url("img/desert.jpg");
+}
+</style>
+</head>
+<body>
+
+
+<div class="content-wrapper">
+		<img src="img/Maple-logo.png" class="logo" alt="NAPS Logo">
+		<nav>
+			<ul>
+				<li><a href="MidTermProj.html">Home</a></li>
+        <li><a href="Media.html" style ="color:black">Media</a></li>
+        <li><a href="Registration.html" style ="color:black">Registration</a></li>
+        <li><a href="Eventpage.html" style ="color:black">Events</a></li>
+
+
+
+			</ul>
+		</nav>
+	</div>
+</header>
+
+<div class="hero">
+	<h1>Ellinia Maple Story Fan Page</h1>
+	<p>Helping you research your favorite classes!</p>
+</div>
+
+
+<div class="container">
+	<h1>Wiki Registration</h1>
+	<h2 style="color: #000000; background-color: #ffffff">If you'd like to contribute to the fan page post your suggestions on our non-available forums!</h2>
+	<div class="form-container">
+		<form id="vol-form">
+			<div class="form-section">
+				<label for="first-name">First Name:</label>
+				<input id="first-name" name="first-name" type="text">
+			</div>
+			<div class="form-section">
+				<label for="last-name">Last Name:</label>
+				<input id="last-name" name="last-name" type="text">
+			</div>
+			<div class="form-section">
+				<label for="email">Email:</label>
+				<input id="email" name="email" type="email">
+			</div>
+			<div class="form-section">
+				<label for="phone">Phone:</label>
+				<input id="phone" name="phone" type="tel">
+			</div>
+			<div class="form-section">
+				<label for="prev-vol">Past Experience:</label>
+				<input id="prev-vol" name="prev-vol" type="text">
+			</div>
+			<div class="form-section">
+				<label for="from-year" class="from-label">From:</label>
+				<select id="from-year" name="from-year">
+					<option value="blank"></option>
+					<option value="1999">Before 2000</option>
+					<option value="2000">2000</option>
+					<option value="2001">2001</option>
+					<option value="2002">2002</option>
+					<option value="2003">2003</option>
+					<option value="2004">2004</option>
+					<option value="2005">2005</option>
+					<option value="2006">2006</option>
+					<option value="2007">2007</option>
+					<option value="2008">2008</option>
+					<option value="2009">2009</option>
+					<option value="2010">2010</option>
+					<option value="2011">2011</option>
+					<option value="2012">2012</option>
+					<option value="2013">2013</option>
+					<option value="2014">2014</option>
+					<option value="2015">2015</option>
+					<option value="2016">2016</option>
+					<option value="2017">2017</option>
+				</select>
+				<center> <label for="to-year" class="to-label"> </center>
+           <center>To:                                  </label><select id="to-year" name="to-year"></center>
+				</select>
+			</div>
+			<input id="submit" type="submit" value="Submit">
+		</form>
+	</div>
+</div>
+
+<footer>
+	<p>Made in NY <br>Copyright © Nexon Incoporated</p>
+</footer>
+
+<script>
+	var quotesArray = [
+		'Buying a bunch of Royal Hair coupons! PM offers! — Clumsicle',
+		'Selling 3 Chaos Scrolls, whisper me your offers! — Akiseo',
+		'Looking for a group to do Arcana pq with! — Fangblade'
+	];
+	var randomNumber = Math.floor(Math.random()*quotesArray.length);
+	document.getElementById('press-quotes2').textContent = '“' + quotesArray[randomNumber].split(' — ')[0] + '” — ' + quotesArray[randomNumber].split(' — ')[1];
+	//console.log( 	quotesArray[randomNumber].split(' — ')[0] );
+</script>
+
+
+
+</body>
+</html>

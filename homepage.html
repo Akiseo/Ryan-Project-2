@@ -1,0 +1,134 @@
+<html>
+<head>
+<center>
+<img src="images/header.png" alt="Header Banner">
+</center>
+<title>
+Ryan's HomePage
+</title>
+<style>
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+</style>
+</head>
+
+
+<body style="background-color:lightblue;">
+  <div class="navbar">
+    <a href="homepage.html">Home</a>
+    <a href="skills.html">Skills</a>
+    <a href="aboutme.html">About Me</a>
+    <div class="dropdown">
+      <button class="dropbtn" onclick="myFunction()">Projects
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content" id="myDropdown">
+        <a href="Project1.html">Project 1</a>
+        <a href="project2.html">Project 2</a>
+        <a href="project3.html">Project 3</a>
+        <a href="project4.html">Project 4</a>
+        <a href="extracredit.html">Extra Credit</a>
+        <a href="jquery.html">J Query Animation</a>
+        <a href="MidTermProj.html">Midterm</a>
+
+
+
+      </div>
+    </div>
+  </div>
+
+<center>
+<h1>Welcome to my project website!</h1>
+<p>Please explore the links above, you can go to my about me to learn a tiny bit about me.</p>
+<p>Or you can go to my skills page to learn about what i'm able to do with javascript! </p>
+<p>If you want to see any of my past projects, you can go to the project tab and have a look at that!</p>
+
+
+
+  <script>
+
+  function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+  }
+
+  window.onclick = function(e) {
+    if (!e.target.matches('.dropbtn')) {
+      var myDropdown = document.getElementById("myDropdown");
+        if (myDropdown.classList.contains('show')) {
+          myDropdown.classList.remove('show');
+        }
+    }
+  }
+  </script>
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+</html>

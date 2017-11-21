@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Elinia Fan Page</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Boogaloo|Open+Sans:300,400|Oswald:700">
+	<link rel="stylesheet" href="css/main2.css">
+	<link rel="stylesheet" href="css/main1.css">
+	<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/style1.css">
+<style>
+body {
+    background-image: url("img/tree.jpg");
+}
+</style>
+</head>
+<body>
+
+
+<div class="content-wrapper">
+		<img src="img/Maple-logo.png" class="logo" alt="NAPS Logo">
+		<nav>
+			<ul>
+				<li><a href="MidTermProj.html">Home</a></li>
+        <li><a href="Media.html" style ="color:black">Media</a></li>
+				<li><a href="Registration.html" style ="color:black">Registration</a></li>
+				<li><a href="Eventpage.html" style ="color:black">Events</a></li>
+
+
+			</ul>
+		</nav>
+	</div>
+</header>
+
+<audio autoplay loop>
+      <source src="img/tot.mp"> //add 3 to .mp3 for music to play
+</audio>
+
+<div class="hero">
+	<h1>Ellinia Maple Story Fan Page</h1>
+	<p>Helping you research your favorite classes!</p>
+</div>
+
+
+<center>
+<main role="main">
+	<div class="content-wrapper">
+		<center><b><h1 id="press-quotes2" style="color: #000000; background-color: #ffffff">Why did they have to nerf kannas????!!??! ;w; - Namikana</h1></b></center>
+		<center><h2 style= "color:red">Event Notes</h2></center>
+    <img src="img1/monsterbash.jpg" alt="bash">
+		<img src="img1/event1.png" alt="event1">
+    <img src="img1/event2.png" alt="event2">
+    <img src="img1/event3.png" alt="event3">
+    <img src="img1/event4.jpg" alt="event4">
+    <img src="img1/event5.jpg" alt="event5">
+    <img src="img1/event6.jpg" alt="event6">
+
+	</div>
+</main>
+</center>
+
+<script>
+	var quotesArray = [
+		'Buying a bunch of Royal Hair coupons! PM offers! — Clumsicle',
+		'Selling 3 Chaos Scrolls, whisper me your offers! — Akiseo',
+		'Looking for a group to do Arcana pq with! — Fangblade'
+	];
+	var randomNumber = Math.floor(Math.random()*quotesArray.length);
+	document.getElementById('press-quotes2').textContent = '“' + quotesArray[randomNumber].split(' — ')[0] + '” — ' + quotesArray[randomNumber].split(' — ')[1];
+	//console.log( 	quotesArray[randomNumber].split(' — ')[0] );
+</script>
+
+
+
+
+</body>
+</html>
